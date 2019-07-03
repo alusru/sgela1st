@@ -1,0 +1,22 @@
+<app-header></app-header>
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{{whatwedo.heading}}</h2>
+      <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+      <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">{{whatwedo.introcopy}}</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6" *ngFor= "let service of whatwedo.services">
+        <div class="item-boxes wow fadeInDown" >
+          <div class="icon">
+            <i class="lnr lnr-{{service.Icon}}"></i>
+          </div>
+          <h4>{{service.Title}}</h4>
+          <p>{{service.Description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section End -->

@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div id="pricing" class="section pricing-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Projects</h2>
+      <hr class="lines">
+      <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+    </div>
+
+    <div class="row pricing-tables">
+      <div class="col-md-4 col-sm-6 col-xs-12" *ngFor= "let project of ourproject.projectinfo">
+        <div class="pricing-table" >
+          <div class="pricing-details">
+            <h2>{{project.title}}</h2>
+            <span>{{project.eventname}}</span>
+            <ul>
+              <li>{{project.exp1}}</li>
+              <li>Nunc luctus nulla et tellus</li>
+              <li>Suspendisse quis metus</li>
+              <li>Vestibul varius fermentum erat</li>
+            </ul>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Pricing Table Section -->

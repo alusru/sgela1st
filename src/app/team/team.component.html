@@ -1,0 +1,30 @@
+<app-header></app-header>
+<section id="team" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Team</h2>
+      <hr class="lines">
+      <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+    </div>
+    <div class="row">
+      <div id="teaslider" class="col-lg-3 col-md-6 col-xs-12" *ngFor="let mates of team.teaminfo">
+        <div  class="single-team">
+          <img width="255" height="auto" src="../assets/img/team/{{mates.path}}" alt="">
+          <div class="team-details">
+            <div class="team-inner">
+              <h4 class="team-title">{{mates.teamname}}</h4>
+              <p>{{mates.teamtitle}}</p>
+              <ul class="social-list">
+                <li class="facebook"><a  href="https://www.facebook.com/{{mates.facebook}}" target="{{mates.ta}}"><i class="fa fa-facebook"></i></a></li>
+                <li class="twitter"><a href="https://www.twitter.com/{{mates.twitter}}" target="{{mates.ta}}"><i class="fa fa-twitter"></i></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/{{mates.linkedin}}" target="{{mates.ta}}"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+

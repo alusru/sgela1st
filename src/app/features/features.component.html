@@ -1,0 +1,33 @@
+<app-header></app-header>
+<section id="features" class="section" data-stellar-background-ratio="0.2">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{{feature.heading}}</h2>
+      <hr class="lines">
+      <p class="section-subtitle">{{feature.copy}}</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 col-md-12 col-xs-12">
+        <div class="container">
+          <div class="row">
+             <div class="col-lg-6 col-sm-6 col-xs-12 box-item " *ngFor= "let feature of feature.moti">
+                <span class="icon">
+                  <i class="lnr lnr-{{feature.icon}}"></i>
+                </span>
+                <div class="text">
+                  <h4>{{feature.title}}</h4>
+                  <p>{{feature.copy}}</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-xs-12">
+        <div class="show-box">
+          <img class="img-fulid" src="../assets/img/features/feature.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Features Section End -->
