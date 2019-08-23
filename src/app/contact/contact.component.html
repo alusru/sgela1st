@@ -1,21 +1,61 @@
 <app-header></app-header>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28652.99629991058!2d28.4045924382925!3d-26.143782416671613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e953bb63337110f%3A0x5d7ee1a34ca3b1c1!2sDaveyton%2C+Benoni%2C+1507!5e0!3m2!1sen!2sza!4v1566566002843!5m2!1sen!2sza"
+  width="100%"
+  height="450"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen
+></iframe>
 <section id="contact" class="section" data-stellar-background-ratio="-0.2">
   <div class="contact-form">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-sm-6 col-xs-12">
           <div class="contact-us">
-            <h3>{{contact.heading}}</h3>
+            <h3>{{ contact.heading }}</h3>
             <div class="contact-address">
-              <p>{{contact.address}} </p>
-              <p class="phone">Phone: <span>{{contact.phone}}</span></p>
-              <p class="email">E-mail: <span><a href="{{contact.email}}">{{contact.email}}</a></span></p>
+              <p>{{ contact.address }}</p>
+              <p class="phone">
+                Phone:
+                <span
+                  ><a href="tel:{{ contact.phone }}">{{
+                    contact.phone
+                  }}</a></span
+                >
+              </p>
+              <p class="email">
+                E-mail:
+                <span
+                  ><a href="mailto:{{ contact.email }}">{{
+                    contact.email
+                  }}</a></span
+                >
+              </p>
             </div>
             <div class="social-icons">
               <ul>
-                <li class="facebook"><a href="https://www.facebook.com/{{contact.socialmedia}}" target="{{contact.ta}}"><i class="fa fa-facebook"></i></a></li>
-                <li class="twitter"><a href="https://www.twitter.com/{{contact.socialmedia}}" target="{{contact.ta}}"><i class="fa fa-twitter"></i></a></li>
-                <li class="linkedin"><a href="https://www.linkedin.com/{{contact.socialmedia}}" target="{{contact.ta}}"><i class="fa fa-linkedin"></i></a></li>
+                <li class="facebook">
+                  <a
+                    href="https://www.facebook.com/{{ contact.socialmedia }}"
+                    target="{{ contact.ta }}"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="twitter">
+                  <a
+                    href="https://www.twitter.com/{{ contact.socialmedia }}"
+                    target="{{ contact.ta }}"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="linkedin">
+                  <a
+                    href="https://www.linkedin.com/{{ contact.socialmedia }}"
+                    target="{{ contact.ta }}"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -26,23 +66,48 @@
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Your Name"
+                      required
+                      data-error="Please enter your name"
+                    />
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      id="email"
+                      class="form-control"
+                      name="name"
+                      required
+                      data-error="Please enter your email"
+                    />
                     <div class="help-block with-errors"></div>
                   </div>
                 </div>
                 <div class="col-md-12">
                   <div class="form-group">
-                    <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      placeholder="Your Message"
+                      rows="8"
+                      data-error="Write your message"
+                      required
+                    ></textarea>
                     <div class="help-block with-errors"></div>
                   </div>
                   <div class="submit-button text-center">
-                    <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                    <button class="btn btn-common" id="submit" type="submit">
+                      Send Message
+                    </button>
                     <div id="msgSubmit" class="h3 text-center hidden"></div>
                     <div class="clearfix"></div>
                   </div>
